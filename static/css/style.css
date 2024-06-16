@@ -1,0 +1,42 @@
+.frosted-glass-success {
+            background: rgba(63, 162, 36, 0.73);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(9.8px);
+}
+.frosted-glass-info {
+            background: rgba(57, 127, 207, 0.73);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(9.8px);
+}
+.frosted-glass-warning {
+            background: rgba(207, 194, 57, 0.73);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(9.8px);
+}
+.frosted-glass-danger {
+            background: rgba(207, 57, 57, 0.73);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(9.8px);
+}
+.frosted-glass-secondary {
+            background: rgba(75, 75, 75, 0.73);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(9.8px);
+            -webkit-backdrop-filter: blur(9.8px);
+}
+.d-flex {
+            display: flex !important;
+}
+.justify-content-center {
+            justify-content: center !important;
+}
+.align-items-center {
+            align-items: center !important;
+}
+.min-vh-100 {
+            min-height: 100vh !important;
+}

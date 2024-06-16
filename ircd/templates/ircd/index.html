@@ -1,0 +1,152 @@
+{% extends 'ircd/base.html' %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-success text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <span id="userRecord" class="position-absolute badge rounded-pill badge-warning" hidden>
+                                Record: {{ stats.user.record }}
+                            </span>
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-users fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="stats_user_total" class="display-4 numberDisplay">{{ stats.user.total }}</h5>
+                                    <h5 class="display-5">Users Online</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-info text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-hashtag fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="stats_channel_total" class="display-4 numberDisplay">{{ stats.channel.total }}</h5>
+                                    <h5 class="display-5">Channels</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-warning text-center" href="#">
+                    <div class="card-body text-dark">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-shield-halved fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="stats_oper_total" class="display-4 numberDisplay">{{ stats.user.oper }}</h5>
+                                    <h5 class="display-5" style="margin-top: -3px">Operators</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-secondary text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-network-wired fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="stats_server_total" class="display-4 numberDisplay">{{ stats.server.total }}</h5>
+                                    <h5 class="display-5">Servers</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-danger text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-ban fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="num_server_bans" class="display-4 numberDisplay">{{ stats.server_ban.server_ban }}</h5>
+                                    <h5 class="display-5">Server Bans</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-secondary text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-filter fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="num_spamfilter_entries" class="display-4 numberDisplay">{{ stats.server_ban.spamfilter }}</h5>
+                                    <h5 class="display-5">Spamfilter</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-info text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-door-open fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="num_ban_exceptions" class="display-4 numberDisplay">{{ stats.server_ban.server_ban_exception }}</h5>
+                                    <h5 class="display-5">IRC Ban Exceptions</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a class="card frosted-glass-success text-center" href="#">
+                    <div class="card-body text-white">
+                        <div class="row text-center">
+                            <div class="col">
+                                <div class="col">
+                                    <i aria-hidden="true" class="fa fa-database fa-2x"></i>
+                                </div>
+                                <div class="col">
+                                    <h5 id="stats_uline_total" class="display-4 numberDisplay">{{ stats.server.ulined }}</h5>
+                                    <h5 class="display-5" style="margin-top: -3px">Services Online</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
